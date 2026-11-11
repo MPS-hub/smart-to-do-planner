@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Daily Planner</h1>
+    <input type="date" id="date">
+
+    <p id="count"></p>
+    <progress id="bar" value="0"></progress>
+    <p id="next"></p>
+
+    <form id="form">
+      <input name="title" placeholder="What do you need to do?" required>
+      <input name="time" type="time">
+      <select name="priority">
+        <option value="1">High</option>
+        <option value="2" selected>Medium</option>
+        <option value="3">Low</option>
+      </select>
+      <button>Add</button>
+    </form>
+
+    <ul id="list"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
